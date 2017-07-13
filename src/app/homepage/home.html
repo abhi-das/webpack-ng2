@@ -1,0 +1,9 @@
+<h2>
+	Home Page Component
+</h2>
+
+<ul class="hList">
+	<li *ngFor='let itm of itms' (click)="showInfoFromChild(itm.id)">{{itm.name}}</li>
+</ul>
+
+<info-comp></info-comp>
