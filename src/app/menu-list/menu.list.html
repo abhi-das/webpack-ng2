@@ -1,0 +1,46 @@
+<div class="row">
+	<div class="col-md-8">
+		<button class="btn btn-sm btn-success" (click)="addRowHandler()">Add</button>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<div class="table-container">
+			<table class="table table-filter" *ngIf="tblRows.length > 0">
+				<tbody>
+					<tr *ngFor="let tbRow of tblRows; let idx = index;">
+						<td>
+							<div class="ckbox">
+								<input type="checkbox" id="checkbox{{idx}}">
+								<label for="checkbox{{idx}}"></label>
+							</div>
+						</td>
+						<td>
+							<a href="javascript:;" class="star">
+								<i class="glyphicon glyphicon-star"></i>
+							</a>
+						</td>
+						<td>
+							<div class="media">
+								<a href="#" class="media-left">
+									<img src="{{tbRow.img}}" class="media-photo">
+								</a>
+								<div class="media-body">
+									<span class="media-meta pull-right">{{tbRow.mediaData}}</span>
+									<h4 class="title">{{tbRow.title}}
+									<span class="pull-right pagado">{{tbRow.shortTitle}}</span>
+									</h4>
+									<p class="summary">{{tbRow.summary}}</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<button class="btn btn-sm btn-danger" (click)="deleteHandler(tbRow)">x</button>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
