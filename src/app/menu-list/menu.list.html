@@ -1,19 +1,12 @@
+
 <div class="row">
-	<div class="col-md-8">
-		<button class="btn btn-sm btn-success" (click)="addRowHandler()">Add</button>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-8">
+	<div class="col-md-7">
 		<div class="table-container">
 			<table class="table table-filter" *ngIf="tblRows.length > 0">
 				<tbody>
 					<tr *ngFor="let tbRow of tblRows; let idx = index;">
 						<td>
-							<div class="ckbox">
-								<input type="checkbox" id="checkbox{{idx}}">
-								<label for="checkbox{{idx}}"></label>
-							</div>
+							
 						</td>
 						<td>
 							<a href="javascript:;" class="star">
@@ -26,7 +19,7 @@
 									<img src="{{tbRow.img}}" class="media-photo">
 								</a>
 								<div class="media-body">
-									<span class="media-meta pull-right">{{tbRow.mediaData}}</span>
+									<span class="media-meta pull-right">{{tbRow.mediaDate}}</span>
 									<h4 class="title">{{tbRow.title}}
 									<span class="pull-right pagado">{{tbRow.shortTitle}}</span>
 									</h4>
@@ -42,5 +35,26 @@
 				</tbody>
 			</table>
 		</div>
+	</div>
+	<div class="col-md-5">
+		<form [formGroup]="form" (ngSubmit)="addRowHandler(form.value)">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title" placeholder="Title" formControlName="title" >
+          </div>
+          <div class="form-group">
+            <label for="shortTitle">Short Title</label>
+            <input type="text" class="form-control" id="shortTitle" placeholder="Short Title" formControlName="shortTitle" >
+          </div>
+          <div class="form-group">
+            <label for="mediaDate">Media Date</label>
+            <input type="date" class="form-control" id="mediaDate" placeholder="Media Date" formControlName="mediaDate" >
+          </div>
+          <div class="form-group">
+          	<label for="summary">Summary</label>
+            <textarea id="summary" style="resize:vertical;" class="form-control" placeholder="Summary" rows="6" name="summary" formControlName="summary" ></textarea>
+          </div>
+          <button type="submit" class="btn btn-sm btn-success">Add</button>
+        </form>
 	</div>
 </div>
