@@ -5,29 +5,21 @@ import { Injectable } from '@angular/core';
 export class MenuListService {
 
 	mListServ = [{
-		img: 'https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg',
 		title: 'Cupidatat ex cupidatat',
-		summary: 'Dolor officia et cillum fugiat',
-		mediaDate: '15 Feb, 2014',
-		shortTitle: 'Id dolore et'
+		shortTitle: 'Id dolore et',
+		summary: 'Dolor officia et cillum fugiat Aute consectetur do nisi pariatur exercitation excepteur ut in irure aliquip ad dolore culpa ut cillum in excepteur cupidatat consectetur dolor eu non minim nostrud exercitation aliqua sit consequat ea velit laboris nisi eiusmod.'
 	},{
-		img: 'https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg',
 		title: 'Dolor cillum',
-		summary: 'Laborum reprehenderit magna culpa mollit',
-		mediaDate: '25 Mar, 2017',
-		shortTitle: 'Id Laborum eu'
+		shortTitle: 'Id Laborum eu',
+		summary: 'Laborum reprehenderit magna culpa mollit Excepteur proident in sed dolor enim in anim consequat magna culpa laboris in tempor proident sunt reprehenderit labore fugiat id eu deserunt ex in deserunt cillum exercitation pariatur non irure.'
 	},{
-		img: 'https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg',
 		title: 'Dolore labore ut minim cupidatat',
-		summary: 'Incididunt duis',
-		mediaDate: '21 Dec, 2014',
-		shortTitle: 'Lorem ipsum laborum'
+		shortTitle: 'Lorem ipsum laborum',
+		summary: 'Incididunt duis Veniam in tempor nulla irure irure eiusmod sunt duis deserunt ex labore proident nulla ut elit cupidatat aliqua ut sint id amet cupidatat ea velit non.'
 	},{
-		img: 'https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg',
 		title: 'Deserunt sed',
-		summary: 'Mollit consequat reprehenderit in',
-		mediaDate: '11 June, 2014',
-		shortTitle: 'Lorem ipsum do minim duis'
+		shortTitle: 'Lorem ipsum do minim duis',
+		summary: 'Mollit consequat reprehenderit in Lorem ipsum ut ullamco ex minim labore laboris eu elit consequat sed exercitation in in fugiat aliquip sed consectetur aliquip velit cillum exercitation voluptate dolor veniam adipisicing fugiat dolore.'
 	}];
 
 	getMenuList() {
@@ -37,10 +29,8 @@ export class MenuListService {
 	updateMenuList(nItem:any) {
 
 		var newItem = {
-			img: 'https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg',
 			title: nItem.title,
 			summary: nItem.summary,
-			mediaDate: nItem.mediaDate,
 			shortTitle: nItem.shortTitle
 		};
 

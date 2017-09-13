@@ -6,23 +6,10 @@
 				<tbody>
 					<tr *ngFor="let tbRow of tblRows; let idx = index;">
 						<td>
-							
-						</td>
-						<td>
-							<a href="javascript:;" class="star">
-								<i class="glyphicon glyphicon-star"></i>
-							</a>
-						</td>
-						<td>
 							<div class="media">
-								<a href="#" class="media-left">
-									<img src="{{tbRow.img}}" class="media-photo">
-								</a>
 								<div class="media-body">
-									<span class="media-meta pull-right">{{tbRow.mediaDate}}</span>
-									<h4 class="title">{{tbRow.title}}
-									<span class="pull-right pagado">{{tbRow.shortTitle}}</span>
-									</h4>
+									<h2 class="title">{{tbRow.title}}</h2>
+									<strong>{{tbRow.shortTitle}}</strong>
 									<p class="summary">{{tbRow.summary}}</p>
 								</div>
 							</div>
@@ -45,10 +32,6 @@
           <div class="form-group">
             <label for="shortTitle">Short Title</label>
             <input type="text" class="form-control" id="shortTitle" placeholder="Short Title" formControlName="shortTitle" >
-          </div>
-          <div class="form-group">
-            <label for="mediaDate">Media Date</label>
-            <input type="date" class="form-control" id="mediaDate" placeholder="Media Date" formControlName="mediaDate" >
           </div>
           <div class="form-group">
           	<label for="summary">Summary</label>

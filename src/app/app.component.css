@@ -1,7 +1,18 @@
-main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
+.top-header {
+	background-color: #f8f8f8;
+}
+
+.top-header .navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.text-bold {
+	font-weight: bold;
 }

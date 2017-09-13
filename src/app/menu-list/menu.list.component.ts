@@ -22,7 +22,6 @@ export class MenuListComponent {
 		this.form = new FormGroup({
 			title: new FormControl(),
 			shortTitle: new FormControl(),
-			mediaDate: new FormControl(),
 			summary: new FormControl()
 		});
 
