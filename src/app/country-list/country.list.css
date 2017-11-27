@@ -1,0 +1,10 @@
+ul {
+	list-style: none;
+}
+
+.cId {
+	padding: .5em .2em;
+	background: #75a0c5;
+	text-decoration: none;
+	color: #f1f1f1;
+}

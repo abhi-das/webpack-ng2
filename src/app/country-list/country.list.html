@@ -1,0 +1,8 @@
+<ul>
+	<li *ngFor="let clist of loadCouList">
+
+		<h2 class="cId">Info Id: {{clist.id}}</h2>
+		
+		<sub-content [cInfo]="clist.info"></sub-content>
+	</li>
+</ul>
