@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/assets/css/styles.css"],"names":[],"mappings":"AAAA;IACI,iCAAiC;IACjC,+BAA+B","file":"app.1e6b4b5e17aa47ba5c12.css","sourcesContent":["body {\r\n    font-family: Raleway, sans-serif;\r\n    background: rgb(193, 193, 193);\r\n}\n\n\n// WEBPACK FOOTER //\n// ./src/assets/css/styles.css"],"sourceRoot":""}
